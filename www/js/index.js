@@ -8,10 +8,17 @@ var launched_count = 0;
 		var key = "pen";
 		var value = "blue";
 		window.localStorage.setItem( key, value );
-		var key = "pen";
-		var value = window.localStorage.getItem(key);
-		window.alert(value);
-		window.alert("Number of items: " + window.localStorage.length())
+		var outkey = "pen";
+		var outvalue = window.localStorage.getItem(outkey);
+		window.alert(outvalue);
+		var key2 = "phone";
+		var value2 = "Samsung";
+		window.localStorage.setItem( key2, value2 );
+		var outkey2 = "phone";
+		var outvalue2 = window.localStorage.getItem(outkey2);
+		window.alert(outvalue2);
+		var numbit = window.localStorage.length();
+		window.alert("Number of items: " + numbit);
     }
 	
 	function updateDisplay() {
