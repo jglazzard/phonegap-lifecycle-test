@@ -28,11 +28,26 @@ var launched_count = 0;
 		$(function () {
 			$("#numbitems").text(numbit);
 		});
-		//var snickers = [
-		//	{"calories":250, "lastName":"Doe"},
-		//	{"firstName":"Anna", "lastName":"Smith"},
-		//	{"firstName":"Peter","lastName": "Jones"}
-		//];
+		var snickers = {
+			"calories":"250",
+			"Salt": "Trace",
+			"Sugar": "lots",
+			"Fat":"20g",
+			"Fat comprises": {
+				"Saturates": "15g",
+				"non Saturates": "5g"}
+
+		};
+		var chocBar = JSON.stringify(snickers);
+		window.localStorage.setItem("barDetails", chocBar );
+		var scal = window.localStorage.getItem("barDetails");
+		window.alert("Snickers " + scal);
+		var snickersJSON = JSON.parse(scal);
+		//var getSimpson = window.localStorage.getItem(“address”);
+		//var simpsonJSON = JSON.parse(getSimpson);
+		$(function () {
+			$("#choc").text(snickersJSON.Salt);
+		});
     }
 	
 	function updateDisplay() {
