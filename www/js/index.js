@@ -24,7 +24,7 @@ var launched_count = 0;
     // device APIs are available
     //
     function onDeviceReady() {
-		alert("device ready");
+		//alert("device ready");
         
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
@@ -36,13 +36,13 @@ var launched_count = 0;
     // Handle the pause event
     //
     function onPause() {
-		alert("pause");
+		//alert("pause");
 		paused_count++;
 		updateDisplay();
     }
 	
 	function onResume() {
-		alert("resume");
+		//alert("resume");
 		resumed_count++;
 		updateDisplay();
     }
