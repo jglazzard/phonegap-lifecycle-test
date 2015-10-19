@@ -17,7 +17,7 @@ var launched_count = 0;
 		var outkey2 = "phone";
 		var outvalue2 = window.localStorage.getItem(outkey2);
 		window.alert(outvalue2);
-		var numbit = window.localStorage.length();
+		var numbit = window.localStorage.length;
 		window.alert("Number of items: " + numbit);
     }
 	
