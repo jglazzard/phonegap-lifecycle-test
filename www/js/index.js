@@ -10,15 +10,29 @@ var launched_count = 0;
 		window.localStorage.setItem( key, value );
 		var outkey = "pen";
 		var outvalue = window.localStorage.getItem(outkey);
-		window.alert(outvalue);
+		//window.alert(outvalue);
 		var key2 = "phone";
 		var value2 = "Samsung";
 		window.localStorage.setItem( key2, value2 );
 		var outkey2 = "phone";
 		var outvalue2 = window.localStorage.getItem(outkey2);
-		window.alert(outvalue2);
+		//window.alert(outvalue2);
 		var numbit = window.localStorage.length;
-		window.alert("Number of items: " + numbit);
+		//window.alert("Number of items: " + numbit);
+		$(function () {
+			$("#myPen").text(outvalue);
+		});
+		$(function () {
+			$("#myPhone").text(outvalue2);
+		});
+		$(function () {
+			$("#numbitems").text(numbit);
+		});
+		//var snickers = [
+		//	{"calories":250, "lastName":"Doe"},
+		//	{"firstName":"Anna", "lastName":"Smith"},
+		//	{"firstName":"Peter","lastName": "Jones"}
+		//];
     }
 	
 	function updateDisplay() {
