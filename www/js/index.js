@@ -5,6 +5,13 @@ var launched_count = 0;
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
 		console.log("device ready");
+		var key = "pen";
+		var value = "blue";
+		window.localStorage.setItem( key, value );
+		var key = "pen";
+		var value = window.localStorage.getItem(key);
+		window.alert(value);
+		window.alert("Number of items: " + window.localStorage.length())
     }
 	
 	function updateDisplay() {
@@ -21,7 +28,7 @@ var launched_count = 0;
         
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
-		
+
 		launched_count++;
 		updateDisplay();
     }
