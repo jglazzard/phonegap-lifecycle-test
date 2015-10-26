@@ -10,13 +10,13 @@
 	<link href="jquery-mobile/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<!--<body onload="onLoad()">-->
+<body onload="onLoad()">
 <div data-role="panel" id="mypanel">
-	<li>
-		<ul><a href="#pageone">Go to Page One</a></ul>
-		<ul><a href="#pagetwo">Go to Page Two</a> </ul>
-		<ul><a href="#paghreewo">Go to Page Three</a> </ul>
-	</li>
+	<ul>
+		<li><a href="#pageone">Go to Page One</a></li>
+		<li><a href="#pagetwo">Go to Page Two</a> </li>
+		<li><a href="#pagethree">Go to Page Three</a> </li>
+	</ul>
 </div>
 
 <div data-role="page" id="pageone">
@@ -24,31 +24,39 @@
 	<div data-role="header">
 		<h1>Welcome To My Homepage</h1>
 	</div>
-
-
+	<div data-role="content">
+		<p>Welcome</p>
+		<a href="#mypanel"><button>Menu</button></a>
+	</div>
+	<div data-role="footer">
+		<p>footer</p>
+	</div>
 </div>
-
 <div data-role="page" id="pagetwo">
+
 	<div data-role="header">
 		<h1>Welcome To Page Two</h1>
 	</div>
-
-</div>
-
-<div data-role="page" id="pagethree">
-	<div data-role="header">
-		<h1>Welcome To Page Three</h1>
+	<div data-role="content">
+		<p>Welcome</p>
+		<a href="#mypanel"><button>Menu</button></a>
 	</div>
-
-</div>
-
 	<div data-role="footer">
-		<h1>Footer Text</h1>
+		<p>footer 2</p>
 	</div>
 </div>
+<div data-role="page" id="pagethree">
 
-<div data-role="footer">
-	<h1>Footer Text</h1>
+	<div data-role="header">
+		<h1>Welcome To Page three</h1>
+	</div>
+	<div data-role="content">
+		<p>Welcome</p>
+		<a href="#mypanel"><button>Menu</button></a>
+	</div>
+	<div data-role="footer 3">
+		<p>footer</p>
+	</div>
 </div>
 </body>
 </html>
